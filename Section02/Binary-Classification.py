@@ -1,10 +1,10 @@
 # Import the necessary library
 import numpy as np
-from sklearn.datasets import make_blobs
+from sklearn.datasets import make_blobs #function
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import Perceptron
+from sklearn.model_selection import train_test_split #function
+from sklearn.preprocessing import StandardScaler #class
+from sklearn.linear_model import Perceptron #class
 
 # Generate a linearly separable dataset with two classes
 X, y = make_blobs(n_samples=1000,
