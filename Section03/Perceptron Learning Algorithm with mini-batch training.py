@@ -27,19 +27,15 @@ for epoch in range(epochs):
         start = i * batch_size
         end = start + batch_size
         X_batch, y_batch = X_shuffled[start:end], y_shuffled[start:end]
-
         # Forward pass
         predictions = np.dot(X_batch, weights) + bias
         predictions = np.where(predictions > 0, 1, 0)  # Step activation
-
         # Compute error
         errors = y_batch - predictions
-
         # Update weights and bias using perceptron learning rule
         weights += learning_rate * np.dot(X_batch.T, errors)
         bias += learning_rate * np.sum(errors)
-
         print(f" Iteration {i+1}/{iterations_per_epoch}, Batch Error: {np.sum(errors)}")
-
 print("\nFinal Weights:", weights)
 print("Final Bias:", bias)
+
