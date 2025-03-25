@@ -29,8 +29,8 @@ for j in range(epochno):
   print(["epoch"+str(j)])
   for i in range(3):
       net = np.dot(x[i, :], w)
-      fnet = np.tanh(net)
-      fnetd = 1 - np.tanh(net) ** 2
+      fnet = np.tanh(net) 
+      fnetd = 1 - np.tanh(net) ** 2 
       e = d[i, 0] - fnet
       deltaw = c * e * fnetd * x[i, :]
 
