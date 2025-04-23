@@ -16,7 +16,7 @@ def perceptron_update(weights, inputs, bias, learning_rate, target, output):
     return weights, bias
 
 # XOR Perceptron Training
-def train_xor_perceptron(epochs=10, learning_rate=0.1):
+def train_xor_perceptron(epochs=20, learning_rate=0.1):
     # Initialize perceptrons with random weights
     p1_weights = np.random.rand(2)  # OR Gate
     p1_bias = np.random.rand()
