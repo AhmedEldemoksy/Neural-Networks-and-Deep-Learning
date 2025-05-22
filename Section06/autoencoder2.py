@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Apr 22 14:28:00 2025
+Created on Wed Apr 23 09:25:59 2025
 
-@author: menas
+@author: A.Eldemoksy
 """
 
 import torch
@@ -11,11 +11,8 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-import numpy as np
+
 import matplotlib.pyplot as plt
-from sklearn.datasets import load_digits
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
 
 # 1. Hyperparameters
 batch_size = 128
