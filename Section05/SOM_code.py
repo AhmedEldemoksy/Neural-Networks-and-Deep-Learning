@@ -29,8 +29,8 @@ def plot_som_grid(weights, title):
         for j in range(grid_size):
             color = weights[i, j]
             plt.fill_between([j, j + 1], [i, i], [i + 1, i + 1], color=color)
-    plt.gca().invert_yaxis()
-    plt.axis('off')
+    plt.gca().invert_yaxis() # 0,0
+    #plt.axis('off')
     plt.title(title)
     plt.show()
 
